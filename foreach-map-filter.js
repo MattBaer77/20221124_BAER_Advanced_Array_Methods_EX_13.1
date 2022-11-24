@@ -30,8 +30,6 @@ Examples:
 */
 function onlyEvenValues(arr){
 
-    console.log('hey')
-
     const newOEVarr = []
 
     arr.forEach((v) => {
@@ -53,6 +51,41 @@ Examples:
 
 */
 function showFirstAndLast(arr){
+
+    console.log('hey')
+
+    const fandLArr = [];
+
+    arr.forEach((v) => {
+
+        let phrase = '';
+
+        for (
+            let i = 0;
+            i < v.length;
+            i ++
+        ) {
+
+            if (i === 0 || i === v.length - 1) {
+                // console.log(v[i])
+                phrase = phrase.concat(v[i]);
+                // console.log(phrase);
+            }
+
+            // console.log(phrase);
+
+            // fandLArr.push(phrase)
+
+        }
+
+        console.log(phrase);
+        fandLArr.push(phrase)
+
+    })
+
+    console.log(fandLArr);
+
+    return fandLArr
     
 }
 
