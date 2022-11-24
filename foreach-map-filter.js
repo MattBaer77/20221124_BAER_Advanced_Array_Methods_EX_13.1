@@ -7,7 +7,17 @@ Examples:
 
 */
 function doubleValues(arr){
-    
+
+    const newDVArr = [];
+
+    arr.forEach((v) => {
+        newDVArr.push(v * 2)
+    })
+
+    // console.log(newdVArr)
+
+    return newDVArr;
+
 }
 
 /*
@@ -19,6 +29,18 @@ Examples:
 
 */
 function onlyEvenValues(arr){
+
+    console.log('hey')
+
+    const newOEVarr = []
+
+    arr.forEach((v) => {
+        if (v % 2 ===0) {
+            newOEVarr.push(v)
+        }
+    })
+
+    return newOEVarr;
     
 }
 
